@@ -166,7 +166,36 @@ case $op in
 				;;
 		esac
 		;;
-	6)	#INSTALANDO UNETBOOTIN
+	6) #INSTALANDO UNITY TWEAK TOOL
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install unity-tweak-tool -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	*)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;		
+	7)	#INSTALANDO UNETBOOTIN
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -195,7 +224,7 @@ case $op in
 				;;
 			esac
 			;;
-	7)	#ATUALIZANDO O SISTEMA
+	8)	#ATUALIZANDO O SISTEMA
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -224,7 +253,7 @@ case $op in
 				;;
 		esac
 		;;
-	8)	#REMOVENDO PACOTE
+	9)	#REMOVENDO PACOTE
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -270,7 +299,7 @@ case $op in
 				;;
 		esac
 		;;
-	9)	#ATUALIZAR LIBREOFFICE
+	10)	#ATUALIZAR LIBREOFFICE
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -299,7 +328,7 @@ case $op in
 				;;
 		esac
 		;;
-	10)	#INSTALANDO NUMIX ICON
+	11)	#INSTALANDO NUMIX ICON
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -328,7 +357,37 @@ case $op in
 				;;
 		esac
 		;;
-	11)	#INSTALANDO ATOM EDITOR DE TEXTO
+	
+	12) #INSTALANDO SKYPE
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && apt-get update && apt-get install skype -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	*)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;		
+	13)	#INSTALANDO ATOM EDITOR DE TEXTO
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -357,7 +416,7 @@ case $op in
 				;;
 	 	esac
 	 	;;
-	12)	#INSTALANDO BRACKETS
+	14)	#INSTALANDO BRACKETS
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -386,7 +445,7 @@ case $op in
 				;;
 		esac
 		;;
-	13)	#INSTALANDO SUBLIME TEXT
+	15)	#INSTALANDO SUBLIME TEXT
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -415,7 +474,7 @@ case $op in
 				;;
 		esac
 		;;
-	14) #INSTALANDO JAVA ORACLE
+	16) #INSTALANDO JAVA ORACLE
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -444,7 +503,7 @@ case $op in
 				;;
 		esac
 		;;
-	15) #INSTALANDO OPENJDK
+	17) #INSTALANDO OPENJDK
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -473,7 +532,36 @@ case $op in
 				;;
 		esac
 		;;
-	16) #INSTALANDO PLANK DOCK
+	18) #INSTALANDO VLC
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:mc3man/trusty-media && apt-get update && sudo apt-get install vlc -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;		
+	19) #INSTALANDO PLANK DOCK
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -502,7 +590,7 @@ case $op in
 				;;
 		esac
 		;;
-	17)	#INSTALANDO ELEMENTARY TWEAKS
+	20)	#INSTALANDO ELEMENTARY TWEAKS
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -531,7 +619,7 @@ case $op in
 				;;
 		esac
 		;;
-	18)	#INSTALANDO GCC
+	21)	#INSTALANDO GCC
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -560,7 +648,7 @@ case $op in
 				;;
 		esac
 		;;
-	19) #INSTALANDO INKSCAPE
+	22) #INSTALANDO INKSCAPE
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
@@ -589,7 +677,36 @@ case $op in
 				;;
 		esac
 		;;
-	20) #SAINDO SO SCRIPT
+	23) #INSTALANDO GOOGLE CHROME 64-bit
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install libxss1 libappindicator1 libindicator7 && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && dpkg -i google-chrome*.deb -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	24) #SAINDO SO SCRIPT
 		echo
 		echo "OBRIGADO POR BAIXA NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
 		sleep 2
@@ -613,18 +730,20 @@ tela_opcoes(){
 	echo "================================================================================"
 	echo "AKILA SCRIPT INSTALL ¯\_(ツ)_/¯"
 	echo "================================================================================"
-	echo "[1]UBUNTU CODEC EXTRAS			[11]ATOM EDITOR DE TEXTO"
-	echo "[2]XUBUNTU CODEC EXTRAS			[12]BRACKETS EDITOR DE TEXTO"
-	echo "[3]KUBUNTU CODEC EXTRAS			[13]SUBLIME TEXT EDITOR DE TEXTO"
-	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[14]JAVA(ORACLE)"
-	echo "[5]UBUNTU TWEAK				[15]OPENJDK(JAVA)"
-	echo "[6]UNETBOOTIN				[16]PLANK DOCK"
-	echo "[7]ATUALIZAR SISTEMA			[17]ELEMENTARY TWEAKS"
-	echo "[8]REMOVE PACOTES			[18]GCC(COMPILADOR)"
-	echo "[9]ATUALIZAR LIBREOFFICE		[19]INKSCAPE"
-	echo "[10]NUMIX ICON				[20]SAIR"
+	echo "[1]UBUNTU CODEC EXTRAS			[13]ATOM EDITOR DE TEXTO"
+	echo "[2]XUBUNTU CODEC EXTRAS			[14]BRACKETS EDITOR DE TEXTO"
+	echo "[3]KUBUNTU CODEC EXTRAS			[15]SUBLIME TEXT EDITOR DE TEXTO"
+	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[16]JAVA(ORACLE)"
+	echo "[5]UBUNTU TWEAK				[17]OPENJDK(JAVA)"
+	echo "[6]UNITY TWEAK TOOL			[18]VLC"
+	echo "[7]UNETBOOTIN				[19]PLANK DOCK"
+	echo "[8]ATUALIZAR SISTEMA			[20]ELEMENTARY TWEAKS"
+	echo "[9]REMOVE PACOTES			[21]GCC(COMPILADOR)"
+	echo "[10]ATUALIZAR LIBREOFFICE		[22]INKSCAPE"
+	echo "[11]NUMIX ICON				[23]GOOGLE CHROME 64-bit"
+	echo "[12]SKYPE				[24]SAIR"
 	echo "================================================================================"
-	read -p "DIGITE [1 a 20] -> " op
+	read -p "DIGITE [1 a 24] -> " op
 	echo
 }
 #}}}
