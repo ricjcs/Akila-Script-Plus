@@ -15,7 +15,7 @@ select_root(){
     	echo "OPS!VOCÊ TEM QUE EXECUTAR SCRIPT COMO ROOT"
 		echo "================================================================================"
     	echo "Se a sua conta root não está ativa por padrão, use os seguinte comandos para"
-    	echo "ativar e definir password root:"
+    	echo "ativar conta e definir password root:"
     	echo "sudo passwd root"
     	echo "su root"
     	echo
