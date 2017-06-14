@@ -1,0 +1,3 @@
+- Adicionar opção de confirmação para a instalação de pacotes (o usuário pode ter digitado uma opção sem querer).
+- Adicionar opção de limpar a tela ao retornar ao menu principal.
+- Revisar script aos poucos e fazer as modificações necessárias para ficar o mais simples, intuitivo e visual para um usuário comum.
